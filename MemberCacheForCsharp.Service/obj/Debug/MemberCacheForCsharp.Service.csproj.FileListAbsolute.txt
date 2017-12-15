@@ -1,0 +1,5 @@
+F:\开发代码示例\MemberCacheForCsharp\MemberCacheForCsharp.Service\bin\Debug\MemberCacheForCsharp.Service.dll
+F:\开发代码示例\MemberCacheForCsharp\MemberCacheForCsharp.Service\bin\Debug\MemberCacheForCsharp.Service.pdb
+F:\开发代码示例\MemberCacheForCsharp\MemberCacheForCsharp.Service\obj\Debug\MemberCacheForCsharp.Service.csproj.CoreCompileInputs.cache
+F:\开发代码示例\MemberCacheForCsharp\MemberCacheForCsharp.Service\obj\Debug\MemberCacheForCsharp.Service.dll
+F:\开发代码示例\MemberCacheForCsharp\MemberCacheForCsharp.Service\obj\Debug\MemberCacheForCsharp.Service.pdb

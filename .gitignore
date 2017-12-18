@@ -9,8 +9,6 @@
 
 /.idea
 
-/MemberCacheForCsharp/.vs 
-
 # bin debug
 /MemberCacheForCsharp.Biz/bin
 /MemberCacheForCsharp.Biz/obj

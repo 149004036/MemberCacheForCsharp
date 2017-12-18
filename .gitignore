@@ -8,6 +8,7 @@
 /dist
 
 /.idea
+/.vs
 
 # bin debug
 /MemberCacheForCsharp.Biz/bin
@@ -52,9 +53,6 @@
 /packages
 /MemberCacheForCsharp.WebApi/Properties/PublishProfiles
 
-
-/.vs
-
 *.bak
 
 
@@ -62,4 +60,8 @@
 .DS_Store
 npm-debug.log*
 /MemberCacheForCsharp.WebApi/Properties/PublishProfiles/*.user
-/MemberCacheForCsharp.WebApi/Properties/PublishProfiles/FolderProfile.pubxml.user
+/MemberCacheForCsharp.WebApi/Properties/PublishProfiles/FolderPro/file.pubxml.user
+/MemberCacheForCsharp.Common/*.user
+/MemberCacheForCsharp.Service/*.user
+/MemberCacheForCsharp.Biz/*.user
+/MemberCacheForCsharp.Model/*.user

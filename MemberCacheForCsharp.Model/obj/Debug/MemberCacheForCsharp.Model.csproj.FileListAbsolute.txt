@@ -1,6 +1,0 @@
-F:\开发代码示例\MemberCacheForCsharp\MemberCacheForCsharp.Model\bin\Debug\MemberCacheForCsharp.Model.dll
-F:\开发代码示例\MemberCacheForCsharp\MemberCacheForCsharp.Model\bin\Debug\MemberCacheForCsharp.Model.pdb
-F:\开发代码示例\MemberCacheForCsharp\MemberCacheForCsharp.Model\obj\Debug\MemberCacheForCsharp.Model.csprojResolveAssemblyReference.cache
-F:\开发代码示例\MemberCacheForCsharp\MemberCacheForCsharp.Model\obj\Debug\MemberCacheForCsharp.Model.csproj.CoreCompileInputs.cache
-F:\开发代码示例\MemberCacheForCsharp\MemberCacheForCsharp.Model\obj\Debug\MemberCacheForCsharp.Model.dll
-F:\开发代码示例\MemberCacheForCsharp\MemberCacheForCsharp.Model\obj\Debug\MemberCacheForCsharp.Model.pdb

@@ -27,7 +27,7 @@ namespace MemberCacheForCsharp.Service.Tests
                     className = className.Substring(0, 1).ToUpper() + className.Substring(1);
                     dao.AddMappingTable(new KeyValue() { Key = className, Value = tableName });
                 });
-                dao.ClassGenerating.CreateClassFiles(dao, (@"F:\生成表MemberCacheForCsharpModel\DB"), "MemberCacheForCsharp.Model");
+                dao.ClassGenerating.CreateClassFiles(dao, (@"D:\生成表MemberCacheForCsharpModel\DB"), "MemberCacheForCsharp.Model");
 
             }
             catch (Exception ex)

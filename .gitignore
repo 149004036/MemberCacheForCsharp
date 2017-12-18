@@ -65,3 +65,4 @@ npm-debug.log*
 /MemberCacheForCsharp.Service/*.user
 /MemberCacheForCsharp.Biz/*.user
 /MemberCacheForCsharp.Model/*.user
+/MemberCacheForCsharp.Service.Tests/*.user

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemberCacheForCsharp.Model", "MemberCacheForCsharp.Model\MemberCacheForCsharp.Model.csproj", "{ADB5E548-9242-47AC-96C7-2DDE35956801}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemberCacheForCsharp.WebApi.Tests", "MemberCacheForCsharp.WebApi.Tests\MemberCacheForCsharp.WebApi.Tests.csproj", "{8E81D174-1572-4B96-BA0A-A208F2F7159B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemberCacheForCsharp.WebApi", "MemberCacheForCsharp.WebApi\MemberCacheForCsharp.WebApi.csproj", "{AA86F2DF-A1D0-47BD-854A-E13050A559CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemberCacheForCsharp.Service.Tests", "MemberCacheForCsharp.Service.Tests\MemberCacheForCsharp.Service.Tests.csproj", "{78C77371-054D-4440-95C7-628AC1EEF4C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{AA86F2DF-A1D0-47BD-854A-E13050A559CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA86F2DF-A1D0-47BD-854A-E13050A559CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA86F2DF-A1D0-47BD-854A-E13050A559CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C77371-054D-4440-95C7-628AC1EEF4C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C77371-054D-4440-95C7-628AC1EEF4C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C77371-054D-4440-95C7-628AC1EEF4C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C77371-054D-4440-95C7-628AC1EEF4C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

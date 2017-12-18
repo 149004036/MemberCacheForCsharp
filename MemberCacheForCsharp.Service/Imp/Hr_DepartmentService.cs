@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MemberCacheForCsharp.Service
+namespace MemberCacheForCsharp.Service.Imp
 {
-    public interface IHr_DepartmentService
+    public class Hr_DepartmentService : IHr_DepartmentService
     {
     }
 }

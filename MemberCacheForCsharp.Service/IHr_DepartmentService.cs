@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MemberCacheForCsharp.Model
+namespace MemberCacheForCsharp.Service
 {
-    public class Class1
+    public class IHr_DepartmentService
     {
     }
 }

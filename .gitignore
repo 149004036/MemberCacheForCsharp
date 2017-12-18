@@ -1,0 +1,67 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+ 
+# dependencies
+.DS_Store
+/node_modules
+
+# production
+/dist
+
+/.idea
+
+/MemberCacheForCsharp/.vs
+
+# bin debug
+/MemberCacheForCsharp.Biz/bin
+/MemberCacheForCsharp.Biz/obj
+
+/MemberCacheForCsharp.Service/bin
+/MemberCacheForCsharp.Service/obj
+
+/MemberCacheForCsharp.Service.Tests/bin
+/MemberCacheForCsharp.Service.Tests/obj
+/MemberCacheForCsharp.Service.Tests/logs
+/MemberCacheForCsharp.Service.Tests/TestResults
+
+
+/MemberCacheForCsharp.Common/bin
+/MemberCacheForCsharp.Common/obj
+
+/MemberCacheForCsharp.Model/bin
+/MemberCacheForCsharp.Model/obj
+
+/MemberCacheForCsharp.WebApi/bin
+/MemberCacheForCsharp.WebApi/obj
+/MemberCacheForCsharp.WebApi/logs
+
+/MemberCacheForCsharp.Task/bin
+/MemberCacheForCsharp.Task/obj
+
+/MemberCacheForCsharp.WebApi.Tests/bin
+/MemberCacheForCsharp.WebApi.Tests/obj
+/MemberCacheForCsharp.WebApi.Tests/logs
+/MemberCacheForCsharp.WebApi.Tests/TestResults
+
+
+/TestResults
+
+/MemberCacheForCsharp.Service/lib
+/MemberCacheForCsharp.Service.Tests/lib
+
+/MemberCacheForCsharp.Service/docs
+/MemberCacheForCsharp.Service.Tests/docs
+
+/packages
+/MemberCacheForCsharp.WebApi/Properties/PublishProfiles
+
+
+/.vs
+
+*.bak
+
+
+# misc
+.DS_Store
+npm-debug.log*
+/MemberCacheForCsharp.WebApi/Properties/PublishProfiles/*.user
+/MemberCacheForCsharp.WebApi/Properties/PublishProfiles/FolderProfile.pubxml.user

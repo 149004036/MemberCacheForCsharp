@@ -9,7 +9,7 @@
 
 /.idea
 
-/MemberCacheForCsharp/.vs
+/MemberCacheForCsharp/.vs 
 
 # bin debug
 /MemberCacheForCsharp.Biz/bin

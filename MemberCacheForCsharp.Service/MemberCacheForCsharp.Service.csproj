@@ -65,7 +65,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SugarDao.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MemberCacheForCsharp.Model\MemberCacheForCsharp.Model.csproj">
+      <Project>{adb5e548-9242-47ac-96c7-2dde35956801}</Project>
+      <Name>MemberCacheForCsharp.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
       <SubType>Designer</SubType>

@@ -137,5 +137,23 @@ namespace MemberCacheForCsharp.Common.Redis
             return client.RemoveStartFromList(key);
         }
         #endregion
+        /// <summary>
+        /// 存储所有list实体
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        public void StoreAll<T>(List<T> list)
+        {
+            client.StoreAll(list);
+        }
+        /// <summary>
+        /// 存储单个实体
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="t"></param>
+        public void Store<T>(T t)
+        {
+            client.Store(t);
+        }
     }
 }

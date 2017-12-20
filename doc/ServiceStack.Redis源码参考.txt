@@ -1,1 +1,5 @@
 https://github.com/ServiceStack/ServiceStack.Redis#redis-connection-strings
+
+http://www.cnblogs.com/knowledgesea/p/5032101.html
+
+http://www.cnblogs.com/5ishare/p/6492380.html

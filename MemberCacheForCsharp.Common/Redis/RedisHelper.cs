@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MemberCacheForCsharp.Common.Redis
 {
-    public class RedisCacheHelper
+    public class RedisHelper
     {
 
     }

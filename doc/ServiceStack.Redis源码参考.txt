@@ -1,0 +1,1 @@
+https://github.com/ServiceStack/ServiceStack.Redis#redis-connection-strings

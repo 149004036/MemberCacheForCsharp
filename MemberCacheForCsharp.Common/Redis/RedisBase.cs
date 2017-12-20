@@ -7,13 +7,45 @@ using System.Threading.Tasks;
 
 namespace MemberCacheForCsharp.Common.Redis
 {
-   public abstract class RedisBase //: IDisposable
+   public abstract class RedisBase : IDisposable
     {
+        public RedisManager RedisManager { get; set; }
         public static IRedisClient client { get; private set; }
         private bool _disposed = false;
         static RedisBase()
         {
-            //client = 
+            client = RedisManager.GetClient();
+        }
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this._disposed)
+            {
+                if (disposing)
+                {
+                    client.Dispose();
+                    client = null;
+                }
+            }
+            this._disposed = true;
+        }
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        /// <summary>
+        /// 保存数据DB文件到服务器
+        /// </summary>
+        public void Save()
+        {
+            client.Save();
+        }
+        /// <summary>
+        /// 异步保存数据DB文件到服务器
+        /// </summary>
+        public void SaveAsync()
+        {
+            client.SaveAsync();
         }
     }
 }

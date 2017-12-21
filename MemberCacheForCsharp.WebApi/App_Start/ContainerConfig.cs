@@ -21,7 +21,7 @@ namespace MemberCacheForCsharp.WebApi
         public static IContainer RegisterBuilder()
         {
             var builder = new ContainerBuilder();
-            builder.RegisterApiControllers(typeof(WebApiConfig).Assembly).AsSelf().PropertiesAutowired();
+            builder.RegisterApiControllers(typeof(WebApiApplication).Assembly).AsSelf().PropertiesAutowired();
             builder.RegisterWebApiFilterProvider(GlobalConfiguration.Configuration);
             builder.RegisterWebApiModelBinderProvider();
 

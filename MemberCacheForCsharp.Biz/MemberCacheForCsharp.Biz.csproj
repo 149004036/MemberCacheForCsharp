@@ -48,6 +48,10 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MemberCacheForCsharp.Common\MemberCacheForCsharp.Common.csproj">
+      <Project>{fa625575-6610-488a-8030-5b478b722b5d}</Project>
+      <Name>MemberCacheForCsharp.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MemberCacheForCsharp.Model\MemberCacheForCsharp.Model.csproj">
       <Project>{adb5e548-9242-47ac-96c7-2dde35956801}</Project>
       <Name>MemberCacheForCsharp.Model</Name>

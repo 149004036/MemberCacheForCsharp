@@ -15,6 +15,26 @@ namespace MemberCacheForCsharp.WebApi.Tests
     {
         private IContainer _container;
         private static string address = "http://localhost:9000/";
+        private static LoginMockContext context = new LoginMockContext();
+
+        /// <summary>
+        /// testclass初始化
+        /// </summary>
+        /// <param name="test"></param>
+        [AssemblyInitialize]
+        public static void TestClassInit(TestContext test)
+        {
+            context.Address = address;
+            context.Init();
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        [AssemblyCleanup()]
+        public static void AssemblyCleanup()
+        {
+            context.Distory();
+        }
         /// <summary>
         /// get 请求获取数据
         /// </summary>

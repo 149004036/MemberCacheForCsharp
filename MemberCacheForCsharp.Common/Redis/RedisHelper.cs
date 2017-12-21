@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceStack.Redis;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace MemberCacheForCsharp.Common.Redis
 {
     public class RedisHelper :RedisBase
     {
+        public RedisClient Redis = null;
+
         #region String
         /// <summary>
         /// 设置key的value
@@ -137,23 +140,79 @@ namespace MemberCacheForCsharp.Common.Redis
             return client.RemoveStartFromList(key);
         }
         #endregion
+
+        /// <summary>
+        /// 存储单个实体
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="entity"></param>
+        public T StoreEntity<T>(T entity)
+        {
+           return client.Store(entity);
+        }        
+        /// <summary>
+        /// 删除实体类
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="entity"></param>
+        public void DeleteEntity<T>(T entity)
+        {
+            client.Delete(entity);
+        }
+
         /// <summary>
         /// 存储所有list实体
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
-        public void StoreAll<T>(List<T> list)
+        public void StoreList<T>(IList<T> list)
         {
             client.StoreAll(list);
         }
         /// <summary>
-        /// 存储单个实体
+        /// 删除该实体类型的所有list数据
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="t"></param>
-        public void Store<T>(T t)
+        public void DeleteList<T>()
         {
-            client.Store(t);
+            client.DeleteAll<T>();
+        }
+        /// <summary>
+        /// 根据id删除该实体类型
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id"></param>
+        public void DeleteEntityById<T>(object id)
+        {
+            client.DeleteById<T>(id);
+        }
+        /// <summary>
+        /// 根据ids删除list
+        /// </summary>
+        /// <typeparam name="List"></typeparam>
+        /// <param name="ids"></param>
+        public void DeleteListByIds<T>(List<string> ids)
+        {
+            client.DeleteByIds<T>(ids);
+        }
+        /// <summary>
+        /// 根据id获取实体对象
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public T GetEntityById<T>(object id)
+        {
+            return client.GetById<T>(id);
+        }
+
+        public IList<T> GetAll<T>()
+        {
+            RedisEndpoint config = new RedisEndpoint();
+            config.Db = 0;
+            
+            Redis = new RedisClient(config);           
+            return Redis.GetAll<T>();
         }
     }
 }

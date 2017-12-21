@@ -37,6 +37,6 @@ namespace MemberCacheForCsharp.Common.Redis
             if (clientManager == null)
                 CreateManager();
             return clientManager.GetClient();
-        }
+        }       
     }
 }

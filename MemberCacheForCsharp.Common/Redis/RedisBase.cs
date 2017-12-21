@@ -10,7 +10,8 @@ namespace MemberCacheForCsharp.Common.Redis
    public abstract class RedisBase : IDisposable
     {
         public RedisManager RedisManager { get; set; }
-        public static IRedisClient client { get; private set; }
+
+        public static IRedisClient client { get; set; }
         private bool _disposed = false;
         static RedisBase()
         {

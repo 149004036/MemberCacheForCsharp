@@ -20,7 +20,7 @@ namespace MemberCacheForCsharp.Redis.Biz
         public IList<Hr_department> GetList()
         {
             IList<Hr_department> list = null;
-            list = RedisHelper.GetAll<Hr_department>();
+            //list = RedisHelper.GetAll<Hr_department>();
             if (list == null || list.Count == 0)
             {
                 list = Hr_DepartmentService.GetList();

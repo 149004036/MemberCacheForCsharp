@@ -13,6 +13,7 @@ namespace MemberCacheForCsharp.Service
     {
         private static readonly ILog logger = LogManager.GetLogger(typeof(SugarDao));
         public ServiceConfig Config { get; set; }
+        public SugarDao() { }
 
         public SqlSugarClient GetDao()
         {

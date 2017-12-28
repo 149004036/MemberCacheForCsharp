@@ -20,6 +20,7 @@ namespace MemberCacheForCsharp.WebApi
 
         public static IContainer RegisterBuilder()
         {
+            log4net.Config.XmlConfigurator.Configure();
             var builder = new ContainerBuilder();
             builder.RegisterApiControllers(typeof(WebApiApplication).Assembly).AsSelf().PropertiesAutowired();
             builder.RegisterWebApiFilterProvider(GlobalConfiguration.Configuration);

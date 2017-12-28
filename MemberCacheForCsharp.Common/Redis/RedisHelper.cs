@@ -9,7 +9,6 @@ namespace MemberCacheForCsharp.Common.Redis
 {
     public class RedisHelper :RedisBase
     {
-        public RedisClient Redis = null;
 
         #region String
         /// <summary>
@@ -205,14 +204,14 @@ namespace MemberCacheForCsharp.Common.Redis
         {
             return client.GetById<T>(id);
         }
+        
+        public string GetTypeSequenceKey<T>() => string.Concat("seq:", typeof(T).Name);
 
-        public IList<T> GetAll<T>()
-        {
-            RedisEndpoint config = new RedisEndpoint();
-            config.Db = 0;
-            
-            Redis = new RedisClient(config);           
-            return Redis.GetAll<T>();
-        }
+        public string GetTypeIdsSetKey<T>() => string.Concat( "ids:", typeof(T).Name);
+
+        public string GetTypeIdsSetKey(Type type) => string.Concat("ids:", type.Name);
+
+        
+        
     }
 }

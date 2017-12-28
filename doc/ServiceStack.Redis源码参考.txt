@@ -1,5 +1,8 @@
-https://github.com/ServiceStack/ServiceStack.Redis#redis-connection-strings
+https://github.com/ServiceStack/ServiceStack.Redis#redis-connection-strings //收费 要自己改
+
+https://github.com/StackExchange/StackExchange.Redis/tree/master/RedisConfigs //免费版本
 
 http://www.cnblogs.com/knowledgesea/p/5032101.html
 
 http://www.cnblogs.com/5ishare/p/6492380.html
+
